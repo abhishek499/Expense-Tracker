@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAPNWrPUBaH1_cdV3Km8wtA2EVfGwlSRj0",
-  authDomain: "expense-tracker-codestormx.firebaseapp.com",
-  projectId: "expense-tracker-codestormx",
-  storageBucket: "expense-tracker-codestormx.firebasestorage.app",
-  messagingSenderId: "961743678336",
-  appId: "1:961743678336:web:29e47be934416c64cdaf65"
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
