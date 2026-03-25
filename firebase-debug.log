@@ -1,0 +1,43 @@
+[debug] [2026-03-25T14:18:47.001Z] ----------------------------------------------------------------------
+[debug] [2026-03-25T14:18:47.003Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ashuk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list --json
+[debug] [2026-03-25T14:18:47.004Z] CLI Version:   15.1.0
+[debug] [2026-03-25T14:18:47.004Z] Platform:      win32
+[debug] [2026-03-25T14:18:47.004Z] Node Version:  v22.18.0
+[debug] [2026-03-25T14:18:47.004Z] Time:          Wed Mar 25 2026 19:48:47 GMT+0530 (India Standard Time)
+[debug] [2026-03-25T14:18:47.004Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-25T14:18:47.235Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-25T14:18:47.235Z] > authorizing via signed-in user (ashukla456.as@gmail.com)
+[debug] [2026-03-25T14:18:47.239Z] Checked if tokens are valid: false, expires at: 1774448968659
+[debug] [2026-03-25T14:18:47.239Z] Checked if tokens are valid: false, expires at: 1774448968659
+[debug] [2026-03-25T14:18:47.239Z] > refreshing access token with scopes: []
+[debug] [2026-03-25T14:18:47.241Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-25T14:18:47.241Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-25T14:18:47.491Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-25T14:18:47.491Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-25T14:18:47.502Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-03-25T14:18:48.223Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-03-25T14:18:48.223Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] ┌──────────────────────┬──────────────────────────────────────┬────────────────┬──────────────────────┐
+│ Project Display Name │ Project ID                           │ Project Number │ Resource Location ID │
+├──────────────────────┼──────────────────────────────────────┼────────────────┼──────────────────────┤
+│ clause-it            │ clause-it                            │ 210908710360   │ [Not specified]      │
+├──────────────────────┼──────────────────────────────────────┼────────────────┼──────────────────────┤
+│ Expense Tracker      │ expense-tracker-codestormx (current) │ 961743678336   │ [Not specified]      │
+├──────────────────────┼──────────────────────────────────────┼────────────────┼──────────────────────┤
+│ Insurance-Project    │ insurance-project-8d108              │ 536392497051   │ [Not specified]      │
+├──────────────────────┼──────────────────────────────────────┼────────────────┼──────────────────────┤
+│ otp-verification     │ otp-verification-b1243               │ 605476856098   │ [Not specified]      │
+├──────────────────────┼──────────────────────────────────────┼────────────────┼──────────────────────┤
+│ 19856                │ project-3079218941373746778          │ 1066615365922  │ [Not specified]      │
+├──────────────────────┼──────────────────────────────────────┼────────────────┼──────────────────────┤
+│ 1832                 │ project-8571950343696133852          │ 793858391345   │ [Not specified]      │
+├──────────────────────┼──────────────────────────────────────┼────────────────┼──────────────────────┤
+│ Tinder               │ tinder-cde75                         │ 891988555363   │ asia-southeast2      │
+└──────────────────────┴──────────────────────────────────────┴────────────────┴──────────────────────┘
+[info] 
+[info] 7 project(s) total.
+[debug] [2026-03-25T14:18:48.252Z] Error: EBUSY: resource busy or locked, unlink 'D:\Dev\React Native Developer Assignment\ExpenseTracker\firebase-debug.log'
+    at Object.unlinkSync (node:fs:1952:11)
+    at process.<anonymous> (C:\Users\ashuk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\cli.js:44:16)
+    at process.emit (node:events:518:28)
